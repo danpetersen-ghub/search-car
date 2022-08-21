@@ -63,7 +63,7 @@ class ImageList extends React.Component {
        
         return(
             <div className="image-list">
-                {reformattedImages}               
+                { reformattedImages }               
             </div>
         )
     } 
