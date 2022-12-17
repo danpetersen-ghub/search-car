@@ -3,3 +3,5 @@
 Simple project w/udemy course to learn react fundamentals. 
 
 Uses the unsplash API to load and preview images.
+
+Use of create-react-app.
