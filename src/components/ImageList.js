@@ -20,7 +20,7 @@
 //                                         </div>
 
 //          );
-       
+
 //         return(
 //             <div className="image-list">
 //                 {reformattedImages}               
@@ -32,7 +32,7 @@
 
 //     }
 
-    
+
 //     render() {
 //         return(         
 //             <div>
@@ -48,7 +48,7 @@
 
 //  V2
 
-import React  from "react";
+import React from "react";
 import ImageCard from "./ImageCard";
 
 class ImageList extends React.Component {
@@ -56,21 +56,21 @@ class ImageList extends React.Component {
     //     images: []
     // }
 
-    displayImages(){
-        const reformattedImages = this.props.images.map( 
-        (image) =>   <ImageCard key={image.id}  image={image} /> 
-         );
-       
-        return(
+    displayImages() {
+        const reformattedImages = this.props.images.map(
+            (image) => <ImageCard key={image.id} image={image} />
+        );
+
+        return (
             <div className="image-list">
-                { reformattedImages }               
+                {reformattedImages}
             </div>
         )
-    } 
+    }
     componentDidUpdate() {
     }
     render() {
-        return(         
+        return (
             <div>
                 <hr></hr>
                 {this.displayImages()}

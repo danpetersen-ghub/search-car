@@ -9,49 +9,49 @@ const users = [
 
 
 export default class App extends React.Component {
-// ATTEMPT 1   
-//    displayUsers(){
-//     const newUsers = users.map(
-//         ({id, name}) => <li key={id}>{name}</li>
-//         );
-//     return (
-//         <div>
-//             {newUsers}
-//         </div>
-//     );    
-// } 
-// render() {
-//     <ul>
-//         {this.displayUsers()}
-//     </ul>
-// }
+  // ATTEMPT 1   
+  //    displayUsers(){
+  //     const newUsers = users.map(
+  //         ({id, name}) => <li key={id}>{name}</li>
+  //         );
+  //     return (
+  //         <div>
+  //             {newUsers}
+  //         </div>
+  //     );    
+  // } 
+  // render() {
+  //     <ul>
+  //         {this.displayUsers()}
+  //     </ul>
+  // }
 
 
-// ATTEMPT 2:   
-// displayUsers(){
-//     const newUsers = users.map( ({id, name}) => {
-//         return <li key={id}>{name}</li>
-//          } 
-//     ); 
-// } 
-// render() {
-//     <ul>
-//         {this.displayUsers()}
-//     </ul>
-// }
+  // ATTEMPT 2:   
+  // displayUsers(){
+  //     const newUsers = users.map( ({id, name}) => {
+  //         return <li key={id}>{name}</li>
+  //          } 
+  //     ); 
+  // } 
+  // render() {
+  //     <ul>
+  //         {this.displayUsers()}
+  //     </ul>
+  // }
 
 
-// ATTEMPT 3:
+  // ATTEMPT 3:
   render() {
-    const newUsers = users.map( ({id, name}) => {
-        return <li key={id}>{name}</li>
-            } 
-    ); 
-    
+    const newUsers = users.map(({ id, name }) => {
+      return <li key={id}>{name}</li>
+    }
+    );
+
     return (
-        <ul>
-            {newUsers}
-        </ul>
+      <ul>
+        {newUsers}
+      </ul>
     );
   }
 }
